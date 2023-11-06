@@ -17,11 +17,11 @@
                 FontSize="30"
                 HorizontalOptions="Center" />
             
-            <Editor
+            <Entry
                 x:Name="In_weight"
                 Placeholder="Please Enter Weight in Pounds: "
                 FontSize="16"
-                ></Editor>
+                ></Entry>
 
             <Editor x:Name="In_heightFeet" Placeholder="Please enter height in feet:" FontSize="16"></Editor>
             <Editor x:Name="In_heightInches" Placeholder="Please enter height in inches:" FontSize="16"></Editor>

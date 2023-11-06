@@ -1,4 +1,4 @@
-﻿using static Android.Renderscripts.ScriptGroup;
+﻿/*using static Android.Renderscripts.ScriptGroup;*/
 
 namespace BMICalcuatorMauiRemake;
 
@@ -57,7 +57,7 @@ public partial class MainPage : ContentPage
         input = "";
     }
 
-    /*private void OnCounterClicked(object sender, EventArgs e)
+	/*private void OnCounterClicked(object sender, EventArgs e)
 	{
 		count++;
 
