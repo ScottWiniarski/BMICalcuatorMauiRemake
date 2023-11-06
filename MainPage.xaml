@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMICalcuatorMauiRemake.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center"
+            BackgroundColor="LightPink">
+
+            <Label
+                x:Name="Out_text"
+                Text="See your BMI Calculated!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="30"
+                HorizontalOptions="Center" />
+            
+            <Editor
+                x:Name="In_weight"
+                Placeholder="Please Enter Weight in Pounds: "
+                FontSize="16"
+                ></Editor>
+
+            <Editor x:Name="In_heightFeet" Placeholder="Please enter height in feet:" FontSize="16"></Editor>
+            <Editor x:Name="In_heightInches" Placeholder="Please enter height in inches:" FontSize="16"></Editor>
+
+            <Button Text="Calculate BMI" Clicked="Button_Clicked"></Button>
+
+            <Label BackgroundColor="Aqua"></Label>
+
+            <Label x:Name="Out_Alcohol" Text="You can buy alcohol legally in..." Padding="20, 10, 20, 10" FontSize="24" Margin="30,0,0,30"></Label>
+            <Label x:Name="ForBirthDate" Text="Please enter your birthday:" FontSize="18" Margin="30,0,0,30"></Label>
+
+            <DatePicker x:Name="birthDate" FontSize="18" Format="D" Margin="30,10,20,30" DateSelected="OnDateSelected"/>
+
+            <Label BackgroundColor="Aqua"></Label>
+
+            <Label x:Name="Out_char" FontSize="20" TextColor="Black" Margin="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="Beige"></Label>
+            <Label x:Name="In_char" FontSize="20" TextColor="Black" Margin="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" BackgroundColor="Beige"></Label>
+
+            <Button Text="Click for a Dot"  Clicked="Dot_Clicked" TextColor="Black" BackgroundColor="Aquamarine" CornerRadius="25"></Button>
+            <Button Text="Click for a Dash"  Clicked="Dash_Clicked" TextColor="Black" BackgroundColor="Aqua" CornerRadius="25"></Button>
+            <Button Text="Click for a Space" Clicked="Space_Clicked" BackgroundColor="Coral" CornerRadius="25"></Button>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
